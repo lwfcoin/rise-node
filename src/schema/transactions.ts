@@ -32,13 +32,13 @@ export default {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
       senderId              : {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
       'and:senderPublicKey' : {
         type  : 'string',
@@ -52,13 +52,13 @@ export default {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
       recipientId           : {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
       senderPublicKeys      : {
         type    : 'array',
@@ -75,7 +75,7 @@ export default {
           type     : 'string',
           format   : 'address',
           minLength: 1,
-          maxLength: 22,
+          maxLength: 24,
         },
       },
       recipientIds          : {
@@ -85,7 +85,7 @@ export default {
           type     : 'string',
           format   : 'address',
           minLength: 1,
-          maxLength: 22,
+          maxLength: 24,
         },
       },
       'and:fromHeight'      : {
@@ -218,7 +218,7 @@ export default {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
     },
   },
@@ -240,7 +240,7 @@ export default {
         type     : 'string',
         format   : 'address',
         minLength: 1,
-        maxLength: 22,
+        maxLength: 24,
       },
       publicKey               : {
         type  : 'string',

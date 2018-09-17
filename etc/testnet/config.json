@@ -1,9 +1,9 @@
 {
-    "port": 5566,
+    "port": 18101,
     "address": "0.0.0.0",
     "version": "1.1.1",
     "fileLogLevel": "info",
-    "logFileName": "logs/rise-testnet.log",
+    "logFileName": "logs/lwf_testnet.log",
     "consoleLogLevel": "info",
     "trustProxy": false,
     "topAccounts": false,
@@ -11,8 +11,8 @@
     "db": {
         "host": "localhost",
         "port": 5432,
-        "database": "rise_testnet_db",
-        "user": "rise",
+        "database": "lwf_testnet",
+        "user": "lwf",
         "password": "password",
         "poolSize": 95,
         "poolIdleTimeout": 30000,
@@ -23,8 +23,8 @@
     },
     "redis": {
         "host": "127.0.0.1",
-        "port": 6380,
-        "db": 0,
+        "port": 6379,
+        "db": 1,
         "password": null
     },
     "api": {
@@ -47,18 +47,30 @@
     "peers": {
         "enabled": true,
         "list": [
-            {
-                "ip": "45.63.91.77",
-                "port": 5566
-            },
-            {
-                "ip": "108.61.99.202",
-                "port": 5566
-            },
-            {
-                "ip": "194.135.95.105",
-                "port": 5566
-            }
+          {
+            "ip": "46.101.85.231",
+            "port": 18101
+          },
+          {
+            "ip": "128.199.116.31",
+            "port": 18101
+          },
+          {
+            "ip": "178.62.214.30",
+            "port": 18101
+          },
+          {
+            "ip": "138.197.204.108",
+            "port": 18101
+          },
+          {
+            "ip": "104.236.67.20",
+            "port": 18101
+          },
+          {
+            "ip": "46.101.74.24",
+            "port": 18101
+          }
         ],
         "access": {
             "blackList": []
@@ -96,5 +108,5 @@
         "verifyOnLoading": false,
         "loadPerIteration": 5000
     },
-    "nethash": "e90d39ac200c495b97deb6d9700745177c7fc4aa80a404108ec820cbeced054c"
+    "nethash": "c16656e85880df9a41abed0aa13b2987b0d853adadc91cbc7e5c8332ea37ccc9"
 }

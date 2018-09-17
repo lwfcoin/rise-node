@@ -1,9 +1,9 @@
 {
-    "port": 5555,
+    "port": 18124,
     "address": "0.0.0.0",
     "version": "1.1.1",
     "fileLogLevel": "info",
-    "logFileName": "logs/rise-master.log",
+    "logFileName": "logs/lwf_mainnet.log",
     "consoleLogLevel": "info",
     "trustProxy": false,
     "topAccounts": false,
@@ -11,8 +11,8 @@
     "db": {
         "host": "localhost",
         "port": 5432,
-        "database": "rise_db",
-        "user": "rise",
+        "database": "lwf_mainnet",
+        "user": "lwf",
         "password": "password",
         "poolSize": 95,
         "poolIdleTimeout": 30000,
@@ -23,7 +23,7 @@
     },
     "redis": {
         "host": "127.0.0.1",
-        "port": 6380,
+        "port": 6379,
         "db": 0,
         "password": null
     },
@@ -47,18 +47,22 @@
     "peers": {
         "enabled": true,
         "list": [
-            {
-                "ip": "45.32.136.66",
-                "port": 5555
-            },
-            {
-                "ip": "45.76.36.14",
-                "port": 5555
-            },
-            {
-                "ip": "212.24.96.99",
-                "port": 5555
-            }
+          {
+            "ip": "51.254.210.64",
+            "port": 18124
+          },
+          {
+            "ip": "51.254.210.69",
+            "port": 18124
+          },
+          {
+            "ip": "139.59.179.52",
+            "port": 18124
+          },
+          {
+            "ip": "146.185.158.174",
+            "port": 18124
+          }
         ],
         "access": {
             "blackList": []
@@ -96,5 +100,5 @@
         "verifyOnLoading": false,
         "loadPerIteration": 5000
     },
-    "nethash": "cd8171332c012514864edd8eb6f68fc3ea6cb2afbaf21c56e12751022684cea5"
+    "nethash": "704f232786a9bff25d0630c06abbc34957448ba6309d6dcef949cf9a6f43954a"
 }
