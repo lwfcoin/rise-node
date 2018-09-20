@@ -1,7 +1,7 @@
-## Rise-node version 1.1.1
+## LWF-node version 1.0.0
 
-# RISE
-[![Build Status](https://travis-ci.org/RiseVision/rise-node.svg?branch=development)](https://travis-ci.org/RiseVision/rise-node) [![Coverage Status](https://coveralls.io/repos/github/RiseVision/rise-node/badge.svg?branch=development)](https://coveralls.io/github/RiseVision/rise-node?branch=development) 
+# LWF
+
 ## Installation
 
 An automatic install script for Ubuntu is available.
@@ -10,7 +10,7 @@ An automatic install script for Ubuntu is available.
 
 For detailed information on node installation and management please refer to the [wiki of this repository](https://github.com/RiseVision/rise-node/wiki).
 
-### Quick start Rise installation (Mainnet)
+### Quick start LWF installation (Mainnet)
 
 First, perform some basic checks:
 
@@ -27,10 +27,10 @@ cd $HOME
 Download the installer:
 
 ```
-wget https://raw.githubusercontent.com/RiseVision/rise-build/master/scripts/install.sh
+wget https://raw.githubusercontent.com/lwfcoin/rise-build/master/scripts/install.sh
 ```
 
-Install Rise:
+Install LWF:
 ```
 bash install.sh install -r mainnet -u https://downloads.rise.vision/core/mainnet/latest.tar.gz
 ```
@@ -40,14 +40,14 @@ The installer will start the node automatically if installation was successful.
 (Optional) Fast sync from a snapshot
 
 ```
-cd rise
+cd lwf-node
 wget https://downloads.rise.vision/snapshots/mainnet/latest -O latestsnap.gz
 ./manager.sh restoreBackup latestsnap.gz
 ```
 
 ## Basic node management
 
-Installer will create a `rise` folder in your homedir. Make sure to `cd` to this dir when managing your node.
+Installer will create a `lwf-node` folder in your homedir. Make sure to `cd` to this dir when managing your node.
 
 
 Check the status of your node with:
@@ -83,7 +83,7 @@ And finally restart your node to apply the changes:
 ./manager.sh reload node
 ```
 
-### Quick start Rise installation (Testnet) 
+### Quick start LWF installation (Testnet) 
 The same as above, only the install step is different:
 ```
 bash install.sh install -r testnet -u https://downloads.rise.vision/core/testnet/latest.tar.gz
@@ -98,6 +98,7 @@ wget https://downloads.rise.vision/snapshots/testnet/latest -O latestsnap.gz
 ```
 
 ## Authors
+- Stefano G. <stefano.gessa@lwf.io>
 - Andrea B. <vekexasia+crypto@gmail.com>
 - Jan <lepetitjan@icloud.com>
 - Mariusz Serek <mariusz@serek.net>
@@ -114,8 +115,9 @@ wget https://downloads.rise.vision/snapshots/testnet/latest -O latestsnap.gz
 
 ## License
 
+Copyright © 2018 LWF<br>
 Copyright © 2017 Rise<br>
-Copyright © 2016-2017 Shift<br>  
+Copyright © 2016-2017 Shift<br>
 Copyright © 2016-2017 Lisk Foundation
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
@@ -130,7 +132,7 @@ This program also incorporates work previously released with lisk `0.7.0` (and e
 
 Copyright © 2017 Rise<br>
 Copyright © 2016-2017 Shift<br>
-Copyright © 2016-2017 Lisk Foundation<br>  
+Copyright © 2016-2017 Lisk Foundation<br>
 Copyright © 2015 Crypti
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
