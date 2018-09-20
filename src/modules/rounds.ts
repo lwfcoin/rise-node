@@ -144,7 +144,7 @@ export class RoundsModule implements IRoundsModule {
     const nextRound = this.roundsLogic.calcRound(block.height + 1);
 
     const finishRound = (
-      (nextRound !== round) || (block.height === 1)
+      (nextRound !== round) || (block.height === 1) || (block.height === 101)
     );
     try {
       // Set ticking flag to true
