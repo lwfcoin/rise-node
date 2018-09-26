@@ -550,6 +550,11 @@ export class TransactionLogic implements ITransactionLogic {
       }
     });
 
+    // Convert senderId and recipientId to upper case
+    ['senderId', 'recipientId'].forEach((k) => {
+      if (tx[k]) tx[k] = tx[k].toUpperCase();
+    });
+
     const report = this.schema.validate(tx, txSchema);
 
     if (!report) {
